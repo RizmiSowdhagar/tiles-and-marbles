@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+        overflow: auto;
+	}
+	div.head{
+		overflow: hidden;
+		background-color: #D1F2EB ;
+		height: 130px;
+		width: 100%;
+		margin: auto;
+		outline: 2px solid black;
+		padding: 0;
+	}
+	h1{
+		position: relative;
+		font-size: 30px;
+		font-style: normal;
+		top: 40px;
+		left: 10px;
+		font-family: Castellar;
+		text-transform: uppercase;
+		margin-left: 50px;
+	}
+	a.menu, li.menu{
+		list-style-type: none;
+		font-size: 20px;
+		display: inline;
+		padding-right: 20px;
+		float: right;
+		top: 0;
+		position: relative;
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	i{
+		padding-right: 5px;
+		color: black;
+	}
+	a.menu:hover{
+		border: 1px solid black;
+		padding: 10px;
+		border-radius:8px;
+	}
+	a.hover:hover{
+		border: 1px solid black;
+		padding: 10px;
+		border-radius:8px;
+	}
+	
+	.topnav {
+  overflow: hidden;
+  background-color: #F7F9F9 ;
+}
+
+.topnav a {
+	text-transform: uppercase;
+  float: left;
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  left: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding-top: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  right: 260px;
+  position: absolute;
+  background-color:#F7F9F9 ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+	
+	.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top:10px;
+  left: 20px;
+  right:  50%;
+  width: 40%;
+  opacity:0.8;
+  text-align: center;
+  height: 170px;
+  background-color:#f2f2f2; 
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+h2{
+	font-size: 40px;
+	font-weight: 0.1;
+	font-style: normal;
+	font-family: Lucida Handwriting;
+	text-transform: capitalize;
+	top: 0;
+}
+p{
+	font-style: normal;
+	font-size: 20px;
+}
+img.img{
+	width: 350px;
+	height: 430px;
+	position: relative;
+	overflow: hidden;
+}
+div.section-new{
+	 width:100%;
+	 height: 430px;
+}
+div.img-set{
+	padding-top: 20px;
+	padding-bottom: 100px;
+	background-color: white;
+	border: 10px double black;
+}
+img.brand-img{
+	float:left;
+	position: relative;
+	left: 23%;
+	overflow: hidden;
+	width: 70px;
+	height: 70px;
+}
+h3{
+	font-size: 20px;
+	font-style: normal;
+	text-transform: capitalize;
+	font-family: Century Schoolbook;
+}
+
+div.footer1{
+		position: relative;
+		float: left;
+		left: 100px;
+	}
+	div.footer2{
+		position: relative;
+		float: left;
+		left: 300px;
+	}
+	div.footer3{
+		position: relative;
+		float: left;
+		left: 520px;
+	}
+</style>
+
+<body>
+	<div class="head">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScH9_MSI6kDowtetZc7cFKE-QNQztcVx2ceA&usqp=CAU" width="150" height="200" style="position: relative; float: left;">
+		<h1>square pride</h1>
+			<ul class="menu">
+				<li class="menu"><a class="menu" href="login.html"><i class="fa fa-sign-in" ></i>log in</a></li>
+			    <li class="menu"><a class="menu" href="signup.html"><i class="fa fa-sign-in" ></i>sign up</a></li>
+			    <li class="menu"><a class="menu" href="about-us.html"><i class="fa fa-address-book-o"></i>about us</a></li>
+			    <li class="menu"><a class="menu" href="home.html"><i class="fa fa-home" ></i>home</a></li>
+			</ul>
+			</div>
+			
+			<div class="topnav" id="myTopnav">
+  <a class="hover" href="offers.html" style=" position: relative; left: 250px;">offers</a>
+  <a class="hover" href="floor-tiles.html" style="position: relative; left: 250px">floor tiles</a>
+  <a class="hover" href="wall-tiles.html" style="position: relative; left: 250px">wall tiles</a>
+  <a class="hover" href="marble.html" style="position: relative; left: 250px">marble</a>
+  <a class="hover" href="design-style.html" style="position: relative; left: 250px">design style</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-transform: uppercase; margin-left:250px;">spaces
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="hover" href="kitchen.html">Kitchen</a>
+      <a class="hover" href="bathroom.html">Bathroom</a>
+      <a class="hover" href="livingroom.html">living room</a>
+      <a class="hover" href="bedroom.html">bedroom</a>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+<marquee scrolldelay="100" style="font-size: 20px; padding-top: 5px;padding-bottom: 5px; color: black; text-transform: uppercase;" >special pricing over 2000 sq.ft. over</marquee>
+			<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="https://marble-arch.london/wordpress-2018/wp-content/uploads/2016/07/190515_TH_33_TLight_HiRes-1900x600.jpg" style="width:100%; height: 400px">
+  <div class="text">Your favourite collection of <br>Floor Tiles is right here!
+							<br><br>
+							Check our latest collecton of <b>Floor <br>Tiles</b> to find your favourite tile design.</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.chitkara.edu.in/wp-content/uploads/2019/02/INTERIOR-DESIGN1.jpg" style="width:100%; height: 400px">
+  <div class="text">Adorn ypur home with luxury!<br><br>
+							Finest quality marble from <br>over <b>250 Countries.</b><br>What's your pick?</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.our-zanzibar.com/wp-content/uploads/2018/06/shelve.png" style="width:100%; height: 400px">
+  <div class="text">Amp up your home decor<br> with the magic of music!<br><br> Explore a range of beautiful <b>Mosaic Designs.</b></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   </div>
+   <script type="text/javascript">
+   	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+   </script>
+		<div class="whats-new" style="background-color:#F2F3F4;">
+			<h1 style="text-align: center;">what's new</h1><br><br><br>
+			<div class="section-new" style="background-color:#AED6F1 ;border-bottom: 1px solid black;">
+				<img class="img" style="float: right;" src="https://i.pinimg.com/originals/26/8a/19/268a199d479629d55a6a9f7c68f71130.jpg">
+				<h2 style="float: left;">Spanish Care<br> Wall Tiles With <br>Coordinated Floor-Care Collection.</h2>
+				<p style="float: left;"><b>SIZE: 60X40CM</b><br><br>
+This is one of the most versatile wall application ceramic tile collection with GERM-FREE advantage.<br> It can create a mesmerizing effect in your bathroom and kitchen with a combination<br> of rectangular and square-shaped options to a signature accent or external wall.<br> Choose the compatible care-floor option in 60x60cm for bathroom flooring.</p>
+			</div>
+			
+			<div class="section-new" style="background-color: #FCF3CF;border-bottom: 1px solid black;">
+				<img class="img" style="float: left;" src="https://cdn.architecturelab.net/wp-content/uploads/2017/05/94f7aea02d5889548e6d70fdb7ae6aef.jpg">
+				<h2 style="float: right;margin-right: 40px;">More Square Feet Per Slab!</h2>
+				<p style="float: right; margin-right: 80px;"><b>SIZE: 160X80 CM</b><br><br>
+The large-format slabs- Royal Care Slabs will give a seamless <br>look due to reduced grout lines. Inspired by nature<br> and elegantly chosen design crafted in the vitrified body, <br>this collection has options for your residential<br> and light commercial wall and floor application areas ensuring hygiene,<br> ease of maintenance and durability.</p>
+			</div>
+			<div class="section-new" style="background-color:#AED6F1 ;border-bottom: 1px solid black;">
+				<img class="img" style="float: right;" src="https://freshome.com/wp-content/uploads/2014/10/interior-designer-9-1.jpg">
+				<h2 style="float: left;">The Marvel Of Modern<br> Vitrification Technology</h2>
+				<p style="float: left;"><b>SIZE: 160X80 CM</b><br><br>
+The Elite SF 64 is a Stain-Free Polished Vitrified collection <br>elegantly designed to become a part of the contemporary<br> lifestyle. Transform every living space with this large-<br>format (160x80cm), high quality, stylish & graceful double-charge vitrified slabs.</p>
+			</div>
+			<div class="section-new" style="background-color: #FCF3CF;border-bottom: 1px solid black; ">
+				<img class="img" style="float: left;" src="https://5.imimg.com/data5/PT/OI/OE/GLADMIN-49169847/onyx-500x500.png">
+				<h2 style="float: right;margin-right: 40px;">The All New Germ-Free<br> Porcelain Slabs & Splits Collection.</h2>
+				<p style="float: right; margin-right: 350px;"><b>SIZE: 60X120 CM</b><br><br>
+Germ-Free Porcelain Slabs (GPS) collection is one of the <br>most authentic fully vitrified porcelain slabs. The collection <br>comes with germ-free, stain-free properties that are the<br> most advanced technologies innovated by Johnson.<br> Minimum maintenance and maximum hygiene is the<br> main aspect of the collection.</p>
+			</div>
+		</div>
+		
+			<div class="handpick" style="background-color:#F2F3F4 ">
+				<h1 style="text-align: center;">HANDPICK FOR YOU</h1><br><br><br>
+				<div class="section-new" style="background-color:#AED6F1 ;border-bottom: 1px solid black;">
+				<img class="img" style="float: right;" src="https://www.cocodsgn.com/wp-content/uploads/2016/09/Style-at-Home-3-550x530.jpg">
+				<h2 style="float: left; font-family: Century Schoolbook;position: relative;left: 200px; ">Bathroom</h2>
+				<p style="float: left; margin-top: 100px;">
+Perhaps the most private and small room in the house is<br> credited by many great people where they get clarity on big ideas!<br>
+
+While cleanliness and pleasing settings remain the most<br> important aspects, presence of water and often the soapy<br> water brings risk of slipping and skidding on the bathroom floor. <br>Hence our handpick for bathroom space is carefully<br> selected wall tile concepts which has recommended floor <br>tiles which ensure safety and easy maintenance.</p>
+			</div>
+			<div class="section-new" style="background-color: #FCF3CF;border-bottom: 1px solid black; ">
+				<img class="img" style="float: left;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7dHf_-VX6exAe6-QuJ_hCgKgot6IlWxjFFQ&usqp=CAU">
+				<h2 style="float: right;position: relative;right: 20%; font-family: Century Schoolbook">Resedential Flooring</h2>
+				<p style="float: right;">
+Among various options of flooring viz – wooden, Italian or other<br> Marble, Granite, Slate, carpet, terazzo, etc – new generation<br> ceramic tiles qualify as the best option not only due to its<br> technical supremacy and ease of maintenance, but also for<br> the range of designs, finish, sizes and more.<br> Our handpick collection is presented to you in various sizes and formats. Explore now!</p>
+			</div>
+			</div>
+			<div class="brand" style="background-color:#F2F3F4 ; overflow: hidden; ">
+				<h1 style="text-align: center;">OUR BRANDS</h1><br><br><br>
+				<div class="img-set">
+					<img class="brand-img" src="https://i.pinimg.com/564x/26/b2/37/26b2378ad1be4c7cbe251c21a9628508.jpg">
+				<img class="brand-img" src="https://cdn.dribbble.com/users/5518050/screenshots/12874424/media/642d807f00827442c7a4e950e3859727.jpg">
+				<img class="brand-img" src="https://media-exp1.licdn.com/dms/image/C560BAQHq8CYjfEUv_A/company-logo_200_200/0?e=2159024400&v=beta&t=C-w8jPO91gqsf0kSjGsDhYtpLLzDRdLEZi0eMjQ_rUk">
+				<img class="brand-img" src="https://cdn.dribbble.com/users/5518050/screenshots/12874424/media/5e115802d0da21691f13506c00c29455.jpg">
+				<img class="brand-img" style="width: 120px" src="https://www.hrjohnsonindia.com/images/preload-logo.jpg">
+				<img class="brand-img" style="width: 120px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIbXFQfOQIGX7Ma5ojqYzFR5t-4cTLYHsMJw&usqp=CAU">
+				<img class="brand-img" style="width: 120px"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEOHYUofmv05FOUDCH1P34QDQIZ85eIsfbQw&usqp=CAU">
+				<img class="brand-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFk9aRELthto_dEuiGsKVeAj7TXxtjTGB6DA&usqp=CAU">
+				<img class="brand-img" src="https://image.freepik.com/free-vector/windmill-tile-granite-marble-countertop-logo-vector-icon_7688-1143.jpg">
+				</div>
+			</div>
+			<div class="connect-us" style="background-color: #F2F3F4 ; overflow: hidden;border-bottom: 1px solid black; ">
+				<h1 style="text-align: left; position: relative; left: 100px; text-decoration: underline; padding-bottom: 15px;">NEWSLETTER</h1><br><br>
+				<form action="newsletter.php" method="POST">
+			<input style=" padding: 15px; border: 1px solid black; width: 330px; position: relative; left:140px; font-size: 18px" type="text" name="Email" placeholder="Enter your Email">
+			<button style="padding: 10px; position: relative; left: 180px; width: 180px;font-size: 18px; border: 1px solid white; background-color: black;opacity: 0.5; color: white;"  type="submit" onclick="">SUBSCRIBE</button><br>	
+			<? php
+$servername = "localhost";
+$Username = "root";
+$Password = "";
+$dbname = "rizmi";
+$mail=$_POST['Email'];
+$port = 3308;
+$conn = mysqli_connect($servername,$username,$password,$dbname,$port);
+if($conn)
+{
+$query="INSERT INTO `newsletter` (`Email`) VALUES ('$mail')";
+	
+$run=mysqli_query($conn,$query);
+if($run==true)
+{
+	
+	echo "now done ";
+}
+else
+{
+	echo "this is wrong";
+}
+}
+else
+{
+	die("connection failed".mysqli_connect_error());
+}
+
+?>	
+		</form></div>
+
+                <div style="background-color:  #D6EAF8; width: 100%; height: 330px; "class="footer">
+ 	<div class="footer1">
+ 		<h3>MORE ABOUT COMPANY</h3>
+ 		<p style="font-size: 20px;">Square Pride is our<br> initiative to connect<br> the designer community<br> with the company</p>
+				
+			</div>
+			<div  class="footer2">
+				<h3>KEEP CONNECTED</h3>
+				<a style="font-size: 20px; padding-bottom: 15px; text-decoration: none;color: black; font-family: Arial; border: none; " href="https://www.facebook.com/"><i style="color: #3b5998;" class="fa fa-facebook-square"></i>Follow on Facebook</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://twitter.com/?lang=en"><i style="color:#17A7EE" class="fa fa-twitter-square" ></i>Follow on Twitter</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.instagram.com/?hl=en"><i style="background:linear-gradient(#515BD4,#8134AF,white,#DD2A7B,#FEDA77,#F58529); width: 10px; height: 20px; margin-right: 5px;" class="fa fa-instagram"></i>Follow on Instagram</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.linkedin.com/company/linkedin/"><i style="color: #3b5998;" class="fa fa-linkedin-square" ></i>Follow on LinkedIN</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.youtube.com/"><i style="color:red;" class="fa fa-youtube-play"></i>Follow on YouTube</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.pinterest.ca/"><i style="color:#D72943 ;" class="fa fa-pinterest-square"></i>Follow on Pinterestt</a><br>
+			</div>
+			<div class="footer3">
+				<h3 style="position: relative;font-size: 18px; 
+		margin-left: 30px; text-transform: uppercase;">CONTACT US </h3>
+				<li style="list-style-type: none; font-size: 20px"><i style="position: relative;top: 20px;" class="fa fa-map-marker"></i><p style="float: right; display:inline-block;position: relative;left: 10px;">S No, 64, Inorbit Mall Rd, APIIC<br> Software Layout, Mindspace,<br> Madhapur, Hyderebad,Telangana,<br>500081</p></li><
+				<li style="list-style-type: none;font-size: 20px"><i style="position: relative;top: 20px;" class="fa fa-phone"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px;">+91 1234567890</p></li>
+                <li style="list-style-type: none;font-size: 20px"><i style="position: relative;top: 20px;" class="fa fa-envelope"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px; color:#E74C3C  ;">square_pride2020@gmail.com</p></li>
+ 	</div>
+ 	</div>
+
+ 	<div style="border-top: 1px solid black""><center><h5 style="font-size: 20px;">Copyrights &copy; 2020,All Rights Reserved</h5></center>
+
+		</div>
+			
+</body>
+</html>

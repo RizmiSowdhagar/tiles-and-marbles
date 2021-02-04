@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+        overflow: auto;
+	}
+	div.head{
+		overflow: hidden;
+		background-color: #D1F2EB ;
+		height: 130px;
+		width: 100%;
+		margin: auto;
+		outline: 2px solid black;
+		padding: 0;
+	}
+	h1{
+		position: relative;
+		font-size: 30px;
+		font-style: normal;
+		top: 40px;
+		left: 10px;
+		font-family: Castellar;
+		text-transform: uppercase;
+		margin-left: 50px;
+	}
+	a.menu, li.menu{
+		list-style-type: none;
+		font-size: 20px;
+		display: inline;
+		padding-right: 20px;
+		float: right;
+		top: 0;
+		position: relative;
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	i{
+		padding-right: 5px;
+		color: black;
+	}
+	a.menu:hover, a.hover:hover{
+		border: 1px solid black;
+		padding: 10px;
+		border-radius:8px;
+	}
+	
+	.topnav {
+  overflow: hidden;
+  background-color: #F7F9F9 ;
+}
+
+.topnav a {
+	text-transform: uppercase;
+  float: left;
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  left: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding-top: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  right: 260px;
+  position: absolute;
+  background-color:#F7F9F9 ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+	
+	.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top:10px;
+  left: 20px;
+  right:  50%;
+  width: 40%;
+  opacity:0.8;
+  text-align: center;
+  height: 170px;
+  background-color:#f2f2f2; 
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.color-img {
+  float: left;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.color-img1 {
+  float: left;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+h3{
+  font-size: 20px;
+  font-style: normal;
+  text-transform: capitalize;
+  font-family: Century Schoolbook;
+}
+
+div.footer1{
+    position: relative;
+    float: left;
+    left: 100px;
+  }
+  div.footer2{
+    position: relative;
+    float: left;
+    left: 300px;
+  }
+  div.footer3{
+    position: relative;
+    float: left;
+    left: 520px;
+  }
+  div .content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+div .content1 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+div.box{
+  float: left;
+  position: relative;
+}
+img.img{
+	width: 350px;
+	height: 430px;
+	position: relative;
+	overflow: hidden;
+}
+div.section-new{
+	 width:100%;
+	 height: 430px;
+}
+
+
+</style>
+<body>
+	<div class="head">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScH9_MSI6kDowtetZc7cFKE-QNQztcVx2ceA&usqp=CAU" width="150" height="200" style="position: relative; float: left;">
+		<h1>square pride</h1>
+			<ul class="menu">
+				<li class="menu"><a class="menu" href="login.html"><i class="fa fa-sign-in" ></i>log in</a></li>
+			    <li class="menu"><a class="menu" href="signup.html"><i class="fa fa-sign-in" ></i>sign up</a></li>
+			    <li class="menu"><a class="menu" href="about-us.html"><i class="fa fa-address-book-o"></i>about us</a></li>
+			    <li class="menu"><a class="menu" href="home.html"><i class="fa fa-home" ></i>home</a></li>
+			</ul>
+			</div>
+			
+			<div class="topnav" id="myTopnav">
+  <a class="hover" href="offers.html" style=" position: relative; left: 250px;">offers</a>
+  <a class="hover" href="floor-tiles.html" style="position: relative; left: 250px">floor tiles</a>
+  <a class="hover" href="wall-tiles.html" style="position: relative; left: 250px">wall tiles</a>
+  <a class="hover" href="marble.html" style="position: relative; left: 250px">marble</a>
+  <a class="hover" href="design-style.html" style="position: relative; left: 250px">design style</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-transform: uppercase; margin-left:250px;">spaces
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="hover" href="kitchen.html">Kitchen</a>
+      <a class="hover" href="bathroom.html">Bathroom</a>
+      <a class="hover" href="livingroom.html">living room</a>
+      <a class="hover" href="bedroom.html">bedroom</a>
+      <a class="hover" href="outdoor.html">outdoors</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+<marquee scrolldelay="100" style="font-size: 20px; padding-top: 5px;padding-bottom: 5px; color: black; text-transform: uppercase;" >special pricing over 2000 sq.ft. over</marquee>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.lithosdesign.com/wp/wp-content/uploads/2020/05/Lithos_Design_Casa_Toscan_marble_divider_.jpg" style="width:100%; height: 450px">
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.mirage.it/media/filer_public_thumbnails_optimized/filer_public/84/0b/840beb83-9da5-4ec0-9b97-64fe86cbefda/mirageshowroom-09.jpg__900x400_q85_subsampling-2.jpg" style="width:100%; height: 450px">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.lithosdesign.com/wp/wp-content/uploads/2020/05/Lithos_Design_Pietre_Luminose_hamal_marble_backlit_walls.jpg" style="width:100%; height: 450px">
+ 
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   </div>
+   <script type="text/javascript">
+   	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+   </script>
+<br><br>
+<div style=" width: 100%;height: 380px;overflow: hidden;background-color: #F2F3F4" class="content">
+	<h2 style="text-align: center;text-transform: uppercase;font-family:Castellar;position: relative; width: 100%; padding-top: 30px; padding-bottom: 30px;">natural stone by color</h2>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/colour/white-marble.jpg?v2" width="210" height="180" ><p style="margin-top: 170px; margin-left: 95px;font-size: 20px; font-family: Perpetua Titling MT">White</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/colour/beige-marble.jpg?v2" width="210" height="180"><p style="margin-top: 170px; margin-left: 95px; font-family: Perpetua Titling MT">beige</p></div>
+  <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/colour/red-marble.jpg?v2" width="210" height="180"><p style="margin-top: 170px; margin-left: 115px; font-family: Perpetua Titling MT">red</p></div>
+    <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/colour/blue-marble.jpg?v2" width="210" height="180"><p style="margin-top: 170px; margin-left: 115px; font-family: Perpetua Titling MT">blue</p></div>
+    <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/colour/brown-marble.jpg?v2" width="210" height="180"><p style="margin-top: 170px; margin-left: 95px; font-family: Perpetua Titling MT">brown</p></div></div>
+    <div style=" width: 100%;height: 270px;background-color: #F2F3F4; overflow: hidden;" class="content"><div class="box">
+    	<img class="color-img1" src="https://www.nitco.in/assets/nitco-images/colour/black-marble.jpg?v2" width="210" height="180"><p style="margin-top: 20px; margin-left: 95px; font-family: Perpetua Titling MT">black</p></div>
+    	<div class="box">
+    	<img class="color-img1" src="https://www.nitco.in/assets/nitco-images/colour/multicolor-marble.jpg?v2" width="210" height="180"><p style="margin-top: 20px; margin-left: 95px; font-family: Perpetua Titling MT">multicolor</p></div>
+    	<div class="box">
+    	<img class="color-img1" src="https://www.nitco.in/assets/nitco-images/colour/grey-marble.jpg?v2" width="210" height="180"><p style="margin-top: 20px; margin-left: 95px; font-family: Perpetua Titling MT">grey</p></div></div>
+
+    	<div style=" width: 100%;background-color: #F2F3F4;height: 520px;overflow: hidden;" class="content1">
+	<h2 style="text-align: center;text-transform: uppercase;font-family:Castellar;overflow: hidden; position: relative; background-color: #F2F3F4 ;width: 100%; padding-top: 30px; ">discover natural stones</h2>
+	<p style="font-size: 15px; text-align: center; padding-bottom: 30px;">The uniqueness of materials such as marble, granite, onyx, and semi-precious stones, is transformed by NITCO into livable surfaces.</p>
+
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/material/quartzite.jpg" width="270" height="220" ><p style="margin-top: 170px; margin-left: 40px;font-size: 20px; font-family: Perpetua Titling MT">quartzite collection</p></div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/material/onyx.jpg" width="270" height="220" ><p style="margin-top: 170px; margin-left: 60px;font-size: 20px; font-family: Perpetua Titling MT">onyx collection</p></div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/material/marble.jpg" width="270" height="220" ><p style="margin-top: 170px; margin-left: 55px;font-size: 20px; font-family: Perpetua Titling MT">marble collection</p></div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/material/granite.jpg" width="270" height="220" ><p style="margin-top: 170px; margin-left: 50px;font-size: 20px; font-family: Perpetua Titling MT">granite collection</p></div>
+</div>
+
+<div style="background-color:#F2F3F4;width: 100%; height: 450px;overflow: hidden;">
+	<div class="section-new" style="background-color: #FCF3CF;border-bottom: 1px solid black; ">
+				<img class="img" style="float: left;" src="https://www.nitco.in/assets/nitco-images/nitco_luxe.jpg">
+				<h2 style="float: right;position: relative;right: 25%; font-size: 40px;
+	font-style: normal;
+	text-transform: capitalize;
+	top: 0;font-family: Century Schoolbook">Square Pride Luxe</h2>
+				<p style="float: right; margin-right: 3%; ">
+<b style="font-size: 20px;">Unleash your creativity!</b><br><br>
+For ages, marble has been known for its timeless charm. It beautifully adds elegance and character to every<br> room it is part of. Hence, considering this nature’s gift as one of the key parts of a promising interior project<br> comes naturally to most architects and designers.<br><br><br>
+
+Today, in a time crunched era, it’s only a blessing if your design ideas meet quick execution and aesthetic<br> perfection.</p>
+			</div>
+</div>
+<div style="background-color:#F2F3F4;width: 100%; height: 450px;overflow: hidden;">
+	<div class="section-new" style="background-color:#AED6F1">
+				<img class="img" style="float: right;" src="https://www.nitco.in/assets/nitco-images/TRT-seal.jpg">
+				<h2 style="float: left;position: relative;left: 13%; font-size: 40px;
+	font-style: normal;
+	text-transform: capitalize;
+	top: 0;font-family: Century Schoolbook">Triple Reinforcement</h2>
+				<p style="float: left; margin-left:  13%; ">
+<b style="font-size: 20px;">Beauty reinforced charisma reinveented</b><br><br><br>Square Pride’s unique Triple Reinforced gives the marble a charmed makeover, shaping it into an<br> exquisite piece of splendor. Marble blocks are strengthened by Fiber and Imported Rock<br> Resin. The surface is prepared by drying in an oven before applying Fiber, while the<br> bottom an top surfaces are filled with Epoxy, Vacuum process and curing in oven ensures<br> filling of Epoxy in the smallest of pores. Extra strengthening is achieve by pre-grinding an<br>UV resin application..</p>
+			</div>
+</div>
+
+<div style="background-color:#F2F3F4;width: 100%; height: 450px;overflow: hidden;">
+	<div class="section-new" style="background-color:#FCF3CF;border-bottom: 1px solid black; ">
+				<img class="img" style="float: left;" src="https://www.nitco.in/assets/nitco-images/banners/Marble-care.jpg">
+				<h2 style="float: right;position: relative;right: 25%; font-size: 40px;
+	font-style: normal;
+	text-transform: capitalize;
+	top: 0;font-family: Century Schoolbook">Care + Maintenance</h2>
+				<p style="position: relative;top: 30%; left: 18%; font-size: 20px;">A comprehensive care and maintenance program is just as important as the initial material<br> selection. If you’re a homeowner, you’ll want to be aware of the care and maintenance requirements before you select a material. If you are an architect or designer, you'll want to know this information prior to specifying a material</p>
+			</div>
+</div>
+
+<div class="connect-us" style="background-color: #F2F3F4 ; overflow: hidden;border-bottom: 1px solid black; border-top: 1px solid black">
+
+        <h1 style="text-align: left; position: relative; left: 100px; text-decoration: underline; padding-bottom: 15px;">NEWSLETTER</h1><br><br>
+        <form action="newsletter.php" method="POST">
+      <input style=" padding: 15px; border: 1px solid black; width: 330px; position: relative; left:140px; font-size: 18px" type="text" name="Enter your Email" placeholder="Enter your Email">
+      <button style="padding: 10px; position: relative; left: 180px; width: 180px;font-size: 18px; border: 1px solid white; background-color: black;opacity: 0.5; color: white;"  type="submit" onclick="">SUBSCRIBE</button><br>   
+    </form></div>
+
+                <div style="background-color:  #D6EAF8; width: 100%; height: 330px; "class="footer">
+  <div class="footer1">
+    <h3>MORE ABOUT COMPANY</h3>
+    <p style="font-size: 20px;">Square Pride is our<br> initiative to connect<br> the designer community<br> with the company</p>
+        
+      </div>
+      <div  class="footer2">
+        <h3>KEEP CONNECTED</h3>
+        <a style="font-size: 20px; padding-bottom: 15px; text-decoration: none;color: black; font-family: Arial; border: none; " href="https://www.facebook.com/"><i style="color: #3b5998;" class="fa fa-facebook-square"></i>Follow on Facebook</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://twitter.com/?lang=en"><i style="color:#17A7EE" class="fa fa-twitter-square" ></i>Follow on Twitter</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.instagram.com/?hl=en"><i style="background:linear-gradient(#515BD4,#8134AF,white,#DD2A7B,#FEDA77,#F58529); width: 10px; height: 20px; margin-right: 5px;" class="fa fa-instagram"></i>Follow on Instagram</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.linkedin.com/company/linkedin/"><i style="color: #3b5998;" class="fa fa-linkedin-square" ></i>Follow on LinkedIN</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.youtube.com/"><i style="color:red;" class="fa fa-youtube-play"></i>Follow on YouTube</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.pinterest.ca/"><i style="color:#D72943 ;" class="fa fa-pinterest-square"></i>Follow on Pinterestt</a><br>
+      </div>
+      <div class="footer3">
+        <h3 style="position: relative;font-size: 18px; 
+    margin-left: 30px; text-transform: uppercase;">CONTACT US </h3>
+        <li style="list-style-type: none; font-size: 20px;"><i style="position: relative;top: 20px;" class="fa fa-map-marker"></i><p style="float: right; display:inline-block;position: relative;left: 10px;">S No, 64, Inorbit Mall Rd, APIIC<br> Software Layout, Mindspace,<br> Madhapur, Hyderebad,Telangana,<br>500081</p></li>
+        <li style="list-style-type: none; font-size: 20px;"><i style="position: relative;top: 20px;" class="fa fa-phone"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px;">+91 1234567890</p></li>
+                <li style="list-style-type: none; font-size: 20px;"><i style="position: relative;top: 20px;" class="fa fa-envelope"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px; color:#E74C3C  ;">square_pride2020@gmail.com</p></li>
+  </div>
+  </div>
+
+  <div style="border-top: 1px solid black""><center><h5 style="font-size: 20px;">Copyrights &copy; 2020,All Rights Reserved</h5></center>
+
+    </div>
+
+
+</body>
+</html>

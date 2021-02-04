@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+        overflow: auto;
+	}
+	div.head{
+		overflow: hidden;
+		background-color: #D1F2EB ;
+		height: 130px;
+		width: 100%;
+		margin: auto;
+		outline: 2px solid black;
+		padding: 0;
+	}
+	h1{
+		position: relative;
+		font-size: 30px;
+		font-style: normal;
+		top: 40px;
+		left: 10px;
+		font-family: Castellar;
+		text-transform: uppercase;
+		margin-left: 50px;
+	}
+	a.menu, li.menu{
+		list-style-type: none;
+		font-size: 20px;
+		display: inline;
+		padding-right: 20px;
+		float: right;
+		top: 0;
+		position: relative;
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	i{
+		padding-right: 5px;
+		color: black;
+	}
+	a.menu:hover{
+		border: 1px solid black;
+		padding: 10px;
+		border-radius:8px;
+	}
+	a.hover:hover{
+		border: 1px solid black;
+		padding: 10px;
+		border-radius:8px;
+	}
+	
+	.topnav {
+  overflow: hidden;
+  background-color: #F7F9F9 ;
+}
+
+.topnav a {
+	text-transform: uppercase;
+  float: left;
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  left: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding-top: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  right: 260px;
+  position: absolute;
+  background-color:#F7F9F9 ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+	.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top:10px;
+  left: 20px;
+  right:  50%;
+  width: 40%;
+  opacity:0.8;
+  text-align: center;
+  height: 170px;
+  background-color:#f2f2f2; 
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+p{
+	font-style: normal;
+	font-size: 20px;
+}
+h3{
+	font-size: 20px;
+	font-style: normal;
+	text-transform: capitalize;
+	font-family: Century Schoolbook;
+}
+
+div.footer1{
+		position: relative;
+		float: left;
+		left: 100px;
+	}
+	div.footer2{
+		position: relative;
+		float: left;
+		left: 300px;
+	}
+	div.footer3{
+		position: relative;
+		float: left;
+		left: 520px;
+	}
+	
+</style>
+<body>
+	<div class="head">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScH9_MSI6kDowtetZc7cFKE-QNQztcVx2ceA&usqp=CAU" width="150" height="200" style="position: relative; float: left;">
+		<h1>square pride</h1>
+			<ul class="menu">
+				<li class="menu"><a class="menu" href="login.html"><i class="fa fa-sign-in" ></i>log in</a></li>
+			    <li class="menu"><a class="menu" href="signup.html"><i class="fa fa-sign-in" ></i>sign up</a></li>
+			    <li class="menu"><a class="menu" href="about-us.html"><i class="fa fa-address-book-o"></i>about us</a></li>
+			    <li class="menu"><a class="menu" href="home.html"><i class="fa fa-home" ></i>home</a></li>
+			</ul>
+			</div>
+			<div class="topnav" id="myTopnav">
+  <a class="hover" href="offers.html" style="position: relative; left: 250px;">offers</a>
+  <a class="hover" href="floor-tiles.html" style="position: relative; left: 250px">floor tiles</a>
+  <a class="hover" href="wall-tiles.html" style="position: relative; left: 250px">wall tiles</a>
+  <a class="hover" href="marble.html" style="position: relative; left: 250px">marble</a>
+  <a class="hover" href="design-style.html" style="position: relative; left: 250px">design style</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-transform: uppercase; margin-left:250px;">spaces
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="hover" href="kitchen.html">Kitchen</a>
+      <a class="hover" href="bathroom.html">Bathroom</a>
+      <a class="hover" href="livingroom.html">living room</a>
+      <a class="hover" href="bedroom.html">bedroom</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+<marquee scrolldelay="100" style="font-size: 20px; padding-top: 5px;padding-bottom: 5px; color: black; text-transform: uppercase;" >special pricing over 2000 sq.ft. over</marquee>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="https://marble-arch.london/wordpress-2018/wp-content/uploads/2016/07/190515_TH_33_TLight_HiRes-1900x600.jpg" style="width:100%; height: 400px">
+  <div class="text">Your favourite collection of <br>Floor Tiles is right here!
+							<br><br>
+							Check our latest collecton of <b>Floor <br>Tiles</b> to find your favourite tile design.</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.chitkara.edu.in/wp-content/uploads/2019/02/INTERIOR-DESIGN1.jpg" style="width:100%; height: 400px">
+  <div class="text">Adorn ypur home with luxury!<br><br>
+							Finest quality marble from <br>over <b>250 Countries.</b><br>What's your pick?</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.our-zanzibar.com/wp-content/uploads/2018/06/shelve.png" style="width:100%; height: 400px">
+  <div class="text">Amp up your home decor<br> with the magic of music!<br><br> Explore a range of beautiful <b>Mosaic Designs.</b></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   </div>
+   <script type="text/javascript">
+   	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+   </script>
+   <div style="background-color:#FDEBD0;" class="content">
+   	<h1 style="text-align: center;">who are we</h1><br><br><br>
+   	<p style="font-family: ">Square Pride is an industry leader for Online Tiles with 3+ Years of Online Industry Experience. Our Online and Offline store stocks the best range of ceramic,wooden,vitrified tiles and so much more! If you’re looking for satin, matte, polished or textured finishes for indoors or outdoors, look no further. We stock a wide variety of sizes, colours, patterns, textures and finishes ready for delivery to your door step.<br><br>
+
+Located in Hyderebad, near In Orbit Mall Road, SoftWare Layout,  it is here where the company has a physical store present. This Physical Store has enabled Square Pride  to become India's first tile company to offer online and offline store of tiles. From beginning to end, only the best will do.Every aspect of our tiles is measured at our very own store, from the tile’s water absorption to its strength. Even the raw materials are constantly tested to ensure that their properties will be worthy of only the best.<br><br>
+
+We also sell samples of our tiles to help you make the right decision. Simply click on the "Add Sample to cart" button on each product you want sample for.We have great feedback from our customers. Our Suppliers are well known brands including Kajaria,Nitco,Orient Bell,RAK Ceramics & Colortile etc. This includes ranges in floor and wall tiles, mosaics and borders, natural stone claddings,  bathroom, kitchen and outdoor. All are available in various sizes, textures and colour, and materials include ceramic ,vitrified, porcelain, natural stone etc.We are now planning to expand  to top cities of India Soon.<br><br>
+
+<b style="text-transform: capitalize;">Treat your walls and floors to the very best</b><br><br>
+
+What sets Square Pride apart from other stores is the quality and price of the materials.Whether you’re looking for floor tiles or wall tiles, be it ceramic tiles, vitrified tiles, wooden tiles Square Pride is the best place for this, our product range has it all.<br><br>
+
+We stock tiles to suit all your needs, available in ceramic,  marble, natural stone, porcelain tiles from Kajaria ,Nitco etc.Our wall and floor tiles are sourced from all over India from suppliers who have been carefully selected for their attention to detail when it comes to quality materials and visual impact.<br><br>
+
+<b style="text-transform: capitalize;">High-quality tiles at affordable prices</b><br><br>
+
+If you’re looking for the very best tiles available but don’t want to break the bank,you choose Square Pride for your interior design needs.Compared to our competitors, we offer the cheapest prices for kitchen tiles and bathroom tiles, and cover many different colour variations - including black and white, wood effect and marble.When you shop with Square Pride.com, you can be assured of one thing yo get the best price in Market.<br><br>
+
+<b style="text-transform: capitalize;">Tiles delivered straight to your doorstep</b><br><br>
+
+If you’re tired of traveling to the stores we here @Square Pride are making things easy. Just at a click you can select what to buy, Just let us know your choice we will deliver it to your doorstep and if order is Rs.15,000 + the delivery is also free.</p>
+   	
+   </div>
+   <div class="connect-us" style="background-color: #F2F3F4 ; overflow: hidden;border-bottom: 1px solid black ">
+				<h1 style="text-align: left; position: relative; left: 100px; text-decoration: underline; padding-bottom: 15px;">NEWSLETTER</h1><br><br>
+				<form action="newsletter.php" method="POST">
+			<input style=" padding: 15px; border: 1px solid black; width: 330px; position: relative; left:140px; font-size: 18px" type="text" name="Enter your Email" placeholder="Enter your Email">
+			<button style="padding: 10px; position: relative; left: 180px; width: 180px;font-size: 18px; border: 1px solid white; background-color: black;opacity: 0.5; color: white;"  type="submit" onclick="">SUBSCRIBE</button><br>		
+		</form></div>
+
+                <div style="background-color:  #D6EAF8; width: 100%; height: 330px; "class="footer">
+ 	<div class="footer1">
+ 		<h3>MORE ABOUT COMPANY</h3>
+ 		<p style="font-size: 20px;">Square Pride is our<br> initiative to connect<br> the designer community<br> with the company</p>
+				
+			</div>
+			<div  class="footer2">
+				<h3>KEEP CONNECTED</h3>
+				<a style="font-size: 20px; padding-bottom: 15px; text-decoration: none;color: black; font-family: Arial; border: none; " href="https://www.facebook.com/"><i style="color: #3b5998;" class="fa fa-facebook-square"></i>Follow on Facebook</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://twitter.com/?lang=en"><i style="color:#17A7EE" class="fa fa-twitter-square" ></i>Follow on Twitter</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.instagram.com/?hl=en"><i style="background:linear-gradient(#515BD4,#8134AF,white,#DD2A7B,#FEDA77,#F58529); width: 10px; height: 20px; margin-right: 5px;" class="fa fa-instagram"></i>Follow on Instagram</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.linkedin.com/company/linkedin/"><i style="color: #3b5998;" class="fa fa-linkedin-square" ></i>Follow on LinkedIN</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.youtube.com/"><i style="color:red;" class="fa fa-youtube-play"></i>Follow on YouTube</a><br>
+				<a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.pinterest.ca/"><i style="color:#D72943 ;" class="fa fa-pinterest-square"></i>Follow on Pinterestt</a><br>
+			</div>
+			<div class="footer3">
+				<h3 style="position: relative;font-size: 18px; 
+		margin-left: 30px; text-transform: uppercase;">CONTACT US </h3>
+				<li style="list-style-type: none;font-size: 20px"><i style="position: relative;top: 20px;" class="fa fa-map-marker"></i><p style="float: right; display:inline-block;position: relative;left: 10px;">S No, 64, Inorbit Mall Rd, APIIC<br> Software Layout, Mindspace,<br> Madhapur, Hyderebad,Telangana,<br>500081</p></li><
+				<li style="list-style-type: none;font-size: 20px"><i style="position: relative;top: 20px;" class="fa fa-phone"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px;">+91 1234567890</p></li>
+                <li style="list-style-type: none; font-size: 20px"><i style="position: relative;top: 20px;" class="fa fa-envelope"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px; color:#E74C3C  ;">square_pride2020@gmail.com</p></li>
+ 	</div>
+ 	</div>
+
+ 	<div style="border-top: 1px solid black""><center><h5 style="font-size: 20px;">Copyrights &copy; 2020,All Rights Reserved</h5></center>
+
+		</div>
+
+</body>
+</html>

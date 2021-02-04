@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+        overflow: auto;
+	}
+	div.head{
+		overflow: hidden;
+		background-color: #D1F2EB ;
+		height: 130px;
+		width: 100%;
+		margin: auto;
+		outline: 2px solid black;
+		padding: 0;
+	}
+	h1{
+		position: relative;
+		font-size: 30px;
+		font-style: normal;
+		top: 40px;
+		left: 10px;
+		font-family: Castellar;
+		text-transform: uppercase;
+		margin-left: 50px;
+	}
+	a.menu, li.menu{
+		list-style-type: none;
+		font-size: 20px;
+		display: inline;
+		padding-right: 20px;
+		float: right;
+		top: 0;
+		position: relative;
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	i{
+		padding-right: 5px;
+		color: black;
+	}
+	a.menu:hover, a.hover:hover{
+		border: 1px solid black;
+		padding: 10px;
+		border-radius:8px;
+	}
+	
+	.topnav {
+  overflow: hidden;
+  background-color: #F7F9F9 ;
+}
+
+.topnav a {
+	text-transform: uppercase;
+  float: left;
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  left: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding-top: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  right: 260px;
+  position: absolute;
+  background-color:#F7F9F9 ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+	
+	.text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top:45%;
+  left: 20px;
+  right:  50%;
+  width: 40%;
+  opacity:0.8;
+  text-align: center;
+  height: 170px;
+  background-color:#f2f2f2;
+}
+.color-img{
+      float: left;
+  margin-left: 60px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #D1F2EB;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  position: relative;
+  left: 30%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #A3E4D7 ;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #76D7C4;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} div.box{
+  float: left;
+  position: relative;
+}
+h3{
+  font-size: 20px;
+  font-style: normal;
+  text-transform: capitalize;
+  font-family: Century Schoolbook;
+}
+
+div.footer1{
+    position: relative;
+    float: left;
+    left: 100px;
+  }
+  div.footer2{
+    position: relative;
+    float: left;
+    left: 300px;
+  }
+  div.footer3{
+    position: relative;
+    float: left;
+    left: 520px;
+  }
+
+</style>
+<body>
+<div class="head">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScH9_MSI6kDowtetZc7cFKE-QNQztcVx2ceA&usqp=CAU" width="150" height="200" style="position: relative; float: left;">
+		<h1>square pride</h1>
+			<ul class="menu">
+				<li class="menu"><a class="menu" href="login.html"><i class="fa fa-sign-in" ></i>log in</a></li>
+			    <li class="menu"><a class="menu" href="signup.html"><i class="fa fa-sign-in" ></i>sign up</a></li>
+			    <li class="menu"><a class="menu" href="about-us.html"><i class="fa fa-address-book-o"></i>about us</a></li>
+			    <li class="menu"><a class="menu" href="home.html"><i class="fa fa-home" ></i>home</a></li>
+			</ul>
+			</div>
+			
+			<div class="topnav" id="myTopnav" style="overflow: hidden;">
+  <a class="hover" href="offers.html" style=" position: relative; left: 250px;">offers</a>
+  <a class="hover" href="floor-tiles.html" style="position: relative; left: 250px">floor tiles</a>
+  <a class="hover" href="wall-tiles.html" style="position: relative; left: 250px">wall tiles</a>
+  <a class="hover" href="marble.html" style="position: relative; left: 250px">marble</a>
+  <a class="hover" href="design-style.html" style="position: relative; left: 250px">design style</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-transform: uppercase; margin-left:250px;">spaces
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="hover" href="kitchen.html">Kitchen</a>
+      <a class="hover" href="bathroom.html">Bathroom</a>
+      <a class="hover" href="livingroom.html">living room</a>
+      <a class="hover" href="bedroom.html">bedroom</a>
+      <a class="hover" href="outdoor.html">outdoors</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+<marquee  scrolldelay="100" style="font-size: 20px; padding-top: 5px; color: black; text-transform: uppercase; overflow: hidden; margin: auto;" >special pricing over 2000 sq.ft. over</marquee>
+			
+   <br><br>
+
+   <div class="myimg" style="overflow: hidden; margin: auto;">
+    <img style="overflow: hidden;" src="https://www.lithosdesign.com/wp/wp-content/uploads/2020/04/LithosDesign_FourSeasonsHotelProject_cover_marble_interior_.jpg" style="width: 100%; height: 400">
+     <div class="text"><b style="font-size: 40px">Design Ideas</b><br>We're obsessed with floor tiles and how they define a room. They're so versatile, whether you're looking to create a statement with a feature floor or a simple foundation to build upon.</div>
+   </div>
+<div style="margin-top: 50px; overflow: hidden;" class="tab">
+  <div style="text-align: center; font-family:Arial; font-size:35px; border-bottom: 1px solid black">Browse Ideas By-</div>
+  <button class="tablinks" onclick="openCity(event, 'bathroom')" id="defaultOpen">Bathroom</button>
+  <button  class="tablinks" onclick="openCity(event, 'kitchen')">Kitchen</button>
+  <button  class="tablinks" onclick="openCity(event, 'living-room')">Living Room</button>
+    <button  class="tablinks" onclick="openCity(event, 'bedroom')">Bedroom</button>
+      <button  class="tablinks" onclick="openCity(event, 'outdoors')">Outdoors</button>
+</div>
+
+<div id="bathroom" style="background-color: #76D7C4; width: 100%;height: 650px; border-bottom: 1px solid black;" class="tabcontent">
+  <div style="font-size: 20px; text-align: center; margin-top: 15px; font-family: Lucida Handwriting;">Breathe in luxury the minute you step into your bathroom. Our Breccia Marrone & Avorio tiles exude elegance like no other!</div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bathroom/aeon-calacatta.jpg" width="230" height="200" ><p style="margin-top: 170px; margin-left: 75px; font-family: Arial">Marble effect porcelain tiles</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bathroom/crema-bellini.jpg" width="230" height="200"><p style="margin-top: 170px; margin-left: 105px; font-family: Arial">Bringing home class </p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bathroom/bianco-alasmo.jpg" width="230" height="200"><p style="margin-top: 170px; margin-left: 95px; font-family: Arial">Say hello to freshness</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bathroom/Statuario-Regal.jpg" width="230" height="200"> <p style="margin-top: 170px; margin-left: 115px; font-family: Arial">Magic of Mosaic</p></div>
+
+  <div class="box"> <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bathroom/Castellon-Frost.jpg" width="230" height="200">  <p style="margin-top: 170px; margin-left: 105px; font-family: Arial">Unmatched Luxury</p></div>
+    
+  <div class="box"> <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bathroom/Baycliff-Nero.jpg" width="230" height="200"> <p style="margin-top: 170px; margin-left: 115px; font-family: Arial">Minimal Classy</p></div>
+    
+</div>
+
+<div style="background-color: #76D7C4; width: 100%;height: 650px;border-bottom: 1px solid black;" id="kitchen" class="tabcontent">
+  <div style="font-size: 20px; text-align: center; margin-top: 15px; font-family: Lucida Handwriting;">It's not just a kitchen, but a dream, when you beautify it with our Corus Averio tiles!</div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/kitchen/earth-steel.jpg" width="230" height="200" ><p style="margin-top: 170px; margin-left: 105px; font-family: Arial">Not just a Kitchen</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/kitchen/bottochino-royale.jpg" width="230" height="200"><p style="margin-top: 170px; margin-left: 105px; font-family: Arial">Your ideal Choice</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/kitchen/nuevo-grey-williams.jpg" width="230" height="200"><p style="margin-top: 170px; margin-left: 60px; font-family: Arial">Where cooking becomes passion</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/kitchen/corus-averio.jpg" width="230" height="200"> <p style="margin-top: 170px; margin-left: 105px; font-family: Arial">Looks like a Dream</p></div>
+
+  <div class="box"> <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/kitchen/fregio-gresio.jpg" width="230" height="200">  <p style="margin-top: 170px; margin-left: 75px; font-family: Arial">A kitchen that has character</p></div>
+    
+  <div class="box"> <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/kitchen/fregio.jpg" width="230" height="200"> <p style="margin-top: 170px; margin-left: 115px; font-family: Arial">A piece of Art</p></div>
+</div>
+
+<div style="background-color: #76D7C4; width: 100%;height: 650px;border-bottom: 1px solid black;" id="living-room" class="tabcontent">
+  <div style="font-size: 20px; text-align: center; margin-top: 15px; font-family: Lucida Handwriting;">Let your living room exude similar warmth like every other room in your abode. Our Xylos Stella tiles from the Dura Digi collection make sure you truly feel at home. Like literally!</div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/livingroom/nordic-fossil.jpg" width="230" height="200" ><p style="margin-top: 170px; margin-left: 55px; font-family: Arial">Bring home the elagance of Italy</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/livingroom/xylos-stella.jpg" width="230" height="200"><p style="margin-top: 170px; margin-left: 60px; font-family: Arial">Give warmth to your living room</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/livingroom/cotto-creme.jpg" width="230" height="200"><p style="margin-top: 170px; margin-left: 80px; font-family: Arial">A subtle touch of elegance</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/livingroom/bluestone-black.jpg" width="230" height="200"> <p style="margin-top: 170px; margin-left: 100px; font-family: Arial">Make bold statement</p></div>
+
+  <div class="box"> <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/livingroom/habitat-creme-duke-grey.jpg" width="230" height="200">  <p style="margin-top: 170px; margin-left: 115px; font-family: Arial">A class apart!</p></div>
+    
+  <div class="box"> <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/livingroom/african-slate.jpg" width="230" height="200"> <p style="margin-top: 170px; margin-left: 115px; font-family: Arial">A rugged beauty</p></div>
+</div>
+
+
+  
+<div style="background-color: #76D7C4; width: 100%;height: 450px;border-bottom: 1px solid black;" id="bedroom" class="tabcontent">
+  <div style="font-size: 20px; text-align: center; margin-top: 15px; font-family: Lucida Handwriting;">Routine is boring. Add a dash of drama and some fun to your bedroom with our Pixel Grey tiles. You can thank us later!</div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/bedroom/rio-bianco-beige.jpg" width="230" height="200" ><p style="margin-top: 170px; margin-left: 105px; font-family: Arial">A touch of warmth</p></div>    
+</div>
+</div>
+<div style="background-color: #76D7C4; width: 100%;height: 450px;border-bottom: 1px solid black;" id="outdoors" class="tabcontent">
+  <div style="font-size: 20px; text-align: center; margin-top: 15px; font-family: Lucida Handwriting;">Enjoy an enhanced look for your favourite balcony with our Asterix Beige, Mocha and Décor tiles!</div>
+  <div class="box">
+  <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/outdoor/ascoli-avellino.jpg" width="230" height="200" ><p style="margin-top: 170px; margin-left: 90px; font-family: Arial">Understated Elegance</p></div>
+   <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/outdoor/belgium-grey.jpg" width="230" height="200"><p style="margin-top: 180px; margin-left: 100px; font-family: Arial">A perfect harmony</p></div>
+    <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/outdoor/cubix-azul.jpg" width="230" height="200"><p style="margin-top: 180px; margin-left: 120px; font-family: Arial">A class apart</p></div>
+    <div class="box">
+    <img class="color-img" src="https://www.nitco.in/assets/nitco-images/design-idea/outdoor/asterix-beige.jpg" width="230" height="200"><p style="margin-top: 180px; margin-left: 90px; font-family: Arial">Refreshing Outdoors</p></div>
+    
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<br><br>
+<div class="connect-us" style="background-color: #F2F3F4 ; overflow: hidden;border-bottom: 1px solid black;">
+        <h1 style="text-align: left; position: relative; left: 100px; text-decoration: underline; padding-bottom: 15px;">NEWSLETTER</h1><br><br>
+        <form action="newsletter.php" method="POST">
+      <input style=" padding: 15px; border: 1px solid black; width: 330px; position: relative; left:140px; font-size: 18px" type="text" name="Enter your Email" placeholder="Enter your Email">
+      <button style="padding: 10px; position: relative; left: 180px; width: 180px;font-size: 18px; border: 1px solid white; background-color: black;opacity: 0.5; color: white;"  type="submit" onclick="">SUBSCRIBE</button><br>   
+    </form></div>
+
+                <div style="background-color:  #D6EAF8; width: 100%; height: 330px; "class="footer">
+  <div class="footer1">
+    <h3>MORE ABOUT COMPANY</h3>
+    <p style="font-size: 20px;">Square Pride is our<br> initiative to connect<br> the designer community<br> with the company</p>
+        
+      </div>
+      <div  class="footer2">
+        <h3>KEEP CONNECTED</h3>
+        <a style="font-size: 20px; padding-bottom: 15px; text-decoration: none;color: black; font-family: Arial; border: none; " href="https://www.facebook.com/"><i style="color: #3b5998;" class="fa fa-facebook-square"></i>Follow on Facebook</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://twitter.com/?lang=en"><i style="color:#17A7EE" class="fa fa-twitter-square" ></i>Follow on Twitter</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.instagram.com/?hl=en"><i style="background:linear-gradient(#515BD4,#8134AF,white,#DD2A7B,#FEDA77,#F58529); width: 10px; height: 20px; margin-right: 5px;" class="fa fa-instagram"></i>Follow on Instagram</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.linkedin.com/company/linkedin/"><i style="color: #3b5998;" class="fa fa-linkedin-square" ></i>Follow on LinkedIN</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.youtube.com/"><i style="color:red;" class="fa fa-youtube-play"></i>Follow on YouTube</a><br>
+        <a style="font-size: 20px; padding-bottom: 10px; text-decoration: none;color: black; font-family: Arial; border: none;" href="https://www.pinterest.ca/"><i style="color:#D72943 ;" class="fa fa-pinterest-square"></i>Follow on Pinterestt</a><br>
+      </div>
+      <div class="footer3">
+        <h3 style="position: relative;font-size: 18px; 
+    margin-left: 30px; text-transform: uppercase;">CONTACT US </h3>
+        <li style="list-style-type: none; font-size: 20px;"><i style="position: relative;top: 20px;" class="fa fa-map-marker"></i><p style="float: right; display:inline-block;position: relative;left: 10px;">S No, 64, Inorbit Mall Rd, APIIC<br> Software Layout, Mindspace,<br> Madhapur, Hyderebad,Telangana,<br>500081</p></li>
+        <li style="list-style-type: none; font-size: 20px;"><i style="position: relative;top: 20px;" class="fa fa-phone"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px;">+91 1234567890</p></li>
+                <li style="list-style-type: none; font-size: 20px;"><i style="position: relative;top: 20px;" class="fa fa-envelope"></i><p style=" display:inline-block;position: relative;left: 10px; top: 20px; color:#E74C3C  ;">square_pride2020@gmail.com</p></li>
+  </div>
+  </div>
+
+  <div style="border-top: 1px solid black""><center><h5 style="font-size: 20px;">Copyrights &copy; 2020,All Rights Reserved</h5></center>
+
+    </div>
+
+
+</body>
+</html>
